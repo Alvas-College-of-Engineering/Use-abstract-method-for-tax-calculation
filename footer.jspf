@@ -1,0 +1,17 @@
+<%-- WEB-INF/footer.jspf — included in every page --%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<footer>
+    <div class="f-left">
+        TaxCalc JSP &copy; <%= new java.util.Date().getYear() + 1900 %>
+        &nbsp;·&nbsp; Session:
+        <code style="font-size:.65rem; color:var(--gold)">
+            ${pageContext.session.id.substring(0,8)}…
+        </code>
+    </div>
+    <div class="f-right">
+        <span>JSP 2.3</span>
+        <span>Java 17</span>
+        <span>Tomcat 10</span>
+        <span>JSTL 3.0</span>
+    </div>
+</footer>
